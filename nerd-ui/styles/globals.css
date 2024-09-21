@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --primary-gradient: linear-gradient(
+    to right,
+    #bfdbfe,
+    #3b82f6
+  ); /* from-blue-200 to-blue-500 */
+}
+body {
+  @apply font-sans;
+  font-family: var(--primary-font);
+  background: var(--primary-gradient);
+  color: #333; /* Adjust text color for better readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff; /* White text for contrast against the gradient */
+}
